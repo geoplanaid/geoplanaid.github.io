@@ -1,0 +1,555 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Geoplana Portfolio</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTAgNTA1IiB3aWR0aD0iNjEwIiBoZWlnaHQ9IjUwNSI+CiAgPGRlZnM+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEzMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNiIgc3RkRGV2aWF0aW9uPSI3IiBmbG9vZC1jb2xvcj0iIzAwMCIgZmxvb2Qtb3BhY2l0eT0iMC4yNSIvPgogICAgPC9maWx0ZXI+CiAgICA8cGF0aCBpZD0ibWFwIiBkPSJNMTQwIDI5MCBMMjE4IDI2MyBMMzA1IDMwMCBMMzkyIDI2MyBMNDcwIDI5MCBMNTYzIDQzNyBMNDMyIDQwMiBMMzA1IDQ2MiBMMTc4IDQwMiBMNDcgNDM3IFoiLz4KICAgIDxjbGlwUGF0aCBpZD0ibWFwQ2xpcCI+CiAgICAgIDx1c2UgaHJlZj0iI21hcCIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CgogIDwhLS0gUGV0YSBsaXBhdCAtLT4KICA8ZyBmaWx0ZXI9InVybCgjc2hhZG93KSI+CiAgICA8dXNlIGhyZWY9IiNtYXAiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzMCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz4KICA8dXNlIGhyZWY9IiNtYXAiIGZpbGw9IiMxMzhCQTYiIHN0cm9rZT0iIzEzOEJBNiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoKICA8IS0tIEphbGFuIC0tPgogIDxnIGNsaXAtcGF0aD0idXJsKCNtYXBDbGlwKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTQwIDM3MiBDIDE0MCAzNTIsIDIzMCAzMzUsIDMwNSAyOTAiLz4KICAgIDxwYXRoIGQ9Ik0yOTUgNDgwIEMgMzMwIDQwMCwgMzQ1IDMzMCwgNDg1IDMwMCIvPgogIDwvZz4KCiAgPCEtLSBQaW4gbG9rYXNpIC0tPgogIDxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KICAgIDxwYXRoIGQ9Ik0zMDUgMzIyIFEyOTkgMzIyIDI5NCAzMTIgTDIyMS45IDE5NS42IEExMDAgMTAwIDAgMSAxIDM4OC4xIDE5NS42IEwzMTYgMzEyIFEzMTEgMzIyIDMwNSAzMjIgWiIKICAgICAgICAgIGZpbGw9IiMzREFBMzUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSIzMDUiIGN5PSIxNDAiIHI9IjUwIiBmaWxsPSIjRkZGRkZGIi8+Cjwvc3ZnPgo=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#FFFFFF; --tint:#F3FAF6; --tint-2:#E4F4EA; --text:#0E2A22; --muted:#587066; --line:#E1ECE6;
+  --green:#22A35A; --green-strong:#15803D; --green-deep:#0F5132; --lime:#B7F0C8; --on-green:#FFFFFF;
+  --water:#3B82C4; --road:#E7B04B; --shadow:0 18px 40px -24px rgba(14,42,34,.35);
+  --font:"Plus Jakarta Sans",ui-sans-serif,system-ui,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+
+:root[data-theme="dark"]{color-scheme:dark;
+  --bg:#08170F; --tint:#0D2017; --tint-2:#123021; --text:#E7F5EC; --muted:#9BB8AA; --line:#1D382A;
+  --green:#3CCB7A; --green-strong:#5BD891; --green-deep:#B7F0C8; --lime:#1F5C3A; --on-green:#052012;
+  --shadow:0 18px 40px -24px rgba(0,0,0,.7);}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 var(--font);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,44px)}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.03em;text-wrap:balance;line-height:1.08}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green-strong)}
+.eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--green)}
+.num{font-variant-numeric:tabular-nums}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.02em;text-decoration:none;margin-right:auto}
+.logo img{height:30px;width:auto;transition:transform .5s var(--ease)}
+.logo:hover img{transform:translateY(-3px) rotate(-6deg)}
+.links{display:flex;gap:26px;font-size:15px;font-weight:600}
+.links a{text-decoration:none;color:var(--muted);position:relative;padding-block:6px}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--green);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
+.links a:hover{color:var(--text)}
+.links a:hover::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 15px/1 var(--font);padding:15px 22px;border-radius:999px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .3s var(--ease),background .3s,box-shadow .3s}
+.btn .arr{display:inline-block;transition:transform .35s var(--ease)}
+.btn:hover .arr{transform:translateX(5px)}
+.btn-green{background:var(--green-strong);color:#fff;box-shadow:0 10px 24px -12px var(--green-strong)}
+:root[data-theme="dark"] .btn-green{color:var(--on-green)}
+
+.btn-green:hover{transform:translateY(-2px)}
+.btn-line{border-color:var(--line);color:var(--text);background:var(--bg)}
+.btn-line:hover{border-color:var(--green);background:var(--tint)}
+.btn-sm{padding:11px 16px;font-size:14px}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:var(--bg);color:var(--muted);display:grid;place-items:center;cursor:pointer;transition:transform .5s var(--ease),border-color .3s}
+.icon-btn:hover{transform:rotate(40deg);border-color:var(--green);color:var(--green-strong)}
+
+/* hero */
+.hero{position:relative;isolation:isolate;text-align:center;padding-block:clamp(72px,10vw,128px) clamp(64px,8vw,96px);overflow:hidden;padding-inline:clamp(16px,4vw,44px)}
+.hero-bg{position:absolute;inset:0;z-index:-1;pointer-events:none;-webkit-mask:radial-gradient(ellipse 42% 50% at 50% 48%,transparent 30%,#000 80%);mask:radial-gradient(ellipse 42% 50% at 50% 48%,transparent 30%,#000 80%)}
+.hero-bg svg{position:absolute;left:50%;top:50%;width:max(1500px,130%);height:auto;transform:translate(-50%,-50%)}
+.grat{stroke:var(--line);stroke-width:1}
+.dots circle{fill:var(--line)}
+.ct{fill:none;stroke:var(--green);stroke-opacity:.38;stroke-width:1.6;stroke-dasharray:1;animation:draw 2.2s var(--ease) backwards}
+.ct.idx{stroke-width:2.4;stroke-opacity:.6}
+.ct.flow{stroke-dasharray:.012 .018;animation:flow 16s linear infinite;stroke:var(--green-strong);stroke-opacity:.7}
+.riv{fill:none;stroke:var(--water);stroke-width:4;stroke-linecap:round;opacity:.5}
+.riv.f{stroke:#fff;stroke-width:1.6;stroke-dasharray:.02 .05;animation:flow 7s linear infinite;opacity:.9}
+.road{fill:none;stroke:var(--road);stroke-width:3.5;stroke-linecap:round;opacity:.7}
+.layer{transition:transform .8s var(--ease)}
+.pin{transform-box:fill-box;transform-origin:50% 100%;animation:drop 1s cubic-bezier(.3,1.6,.5,1) backwards}
+.ring{fill:none;stroke:var(--green);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:ring 2.8s ease-out infinite;opacity:0}
+.hero .inner{position:relative;max-width:900px;margin:0 auto;display:grid;justify-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 12px;border-radius:999px;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(6px);border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--green-deep)}
+.pill i{width:9px;height:9px;border-radius:50%;background:var(--green);animation:ping 2.2s infinite}
+@keyframes wiggle{0%,100%{transform:rotate(-4deg)}8%{transform:rotate(3deg) scale(1.06)}16%{transform:rotate(-4deg)}}
+@keyframes shine{0%,40%{transform:translateX(-120%)}70%,100%{transform:translateX(120%)}}
+.cta-wrap{position:relative;display:inline-flex}
+.price-line{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:22px;font-size:15px;font-weight:600;color:var(--muted)}
+.h1-tag{display:inline-block;vertical-align:top;position:relative;top:-.05em;margin-left:.12em;letter-spacing:0;line-height:1}.h1-tag .price-tag{gap:5px;padding:5px 11px 6px;border-radius:999px;-webkit-mask:none;mask:none;box-shadow:0 8px 16px -8px rgba(21,128,61,.6);transform:rotate(-6deg);animation:tagfloat 4s ease-in-out 1.6s infinite}.h1-tag .price-tag small{font-size:10px;letter-spacing:.06em;text-transform:none;font-weight:700}.h1-tag .price-tag b{font-size:15px;padding-left:0;border-left:0}
+.price-tag{position:relative;display:inline-flex;align-items:center;gap:12px;padding:9px 22px;border-radius:10px;background:linear-gradient(135deg,#2FB46C,#15803D 70%);color:#fff;white-space:nowrap;overflow:hidden;animation:tagfloat 4s ease-in-out 1.6s infinite;-webkit-mask:radial-gradient(circle 8px at 0 50%,transparent 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 8px at 100% 50%,transparent 97%,#000) right/51% 100% no-repeat;mask:radial-gradient(circle 8px at 0 50%,transparent 97%,#000) left/51% 100% no-repeat,radial-gradient(circle 8px at 100% 50%,transparent 97%,#000) right/51% 100% no-repeat}
+.price-tag b{font-size:21px;font-weight:800;letter-spacing:-.02em;padding-left:12px;border-left:2px dashed rgba(255,255,255,.55)}
+.price-tag small{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#D7F7E2}
+.price-tag::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-120%);animation:shine 3.6s ease-in-out 2.1s infinite}
+@keyframes tagfloat{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-5px) rotate(-6deg)}}
+.hero h1{font-size:clamp(42px,6.8vw,90px);letter-spacing:-.05em;line-height:1.04;margin-top:0;max-width:15ch}
+.mark{position:relative;white-space:nowrap;color:var(--green-strong)}
+.mark svg{position:absolute;left:-2%;bottom:-.1em;width:104%;height:.34em;overflow:visible}
+.mark path{fill:none;stroke:var(--green);stroke-width:7;stroke-linecap:round;opacity:.5;stroke-dasharray:1;animation:draw 1.1s .5s var(--ease) backwards}
+.lead{font-size:clamp(17px,1.5vw,20px);color:var(--muted);max-width:56ch;margin:28px auto 38px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+
+@media (max-width:640px){.hero-bg{-webkit-mask:radial-gradient(ellipse 70% 34% at 50% 44%,transparent 25%,#000 85%);mask:radial-gradient(ellipse 70% 34% at 50% 44%,transparent 25%,#000 85%)}.hero-bg svg{width:1250px}}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}
+.fact{padding:28px 20px;text-align:center}
+.fact+.fact{border-left:1px solid var(--line)}
+.fact b{display:block;font-size:clamp(20px,2.1vw,26px);white-space:nowrap;font-weight:800;letter-spacing:-.03em}
+.fact b.sm{font-size:clamp(18px,1.8vw,23px);line-height:1.45}
+.fact span{font-size:14px;color:var(--muted)}.fact b span{font-size:inherit;color:inherit}
+@media (max-width:920px){.links{display:none}.facts{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-left:0}.fact:nth-child(n+3){border-top:1px solid var(--line)}}
+
+section.block{padding-block:104px 8px}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:28px;flex-wrap:wrap;margin-bottom:40px}
+.sec-head h2{font-size:clamp(32px,4.2vw,52px);margin-top:14px}
+.sec-head p{color:var(--muted);max-width:44ch}
+.rise{animation:rise .9s var(--ease) backwards}
+.in-view .rise{animation-play-state:running}
+
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes flow{to{stroke-dashoffset:-1}}
+@keyframes drop{0%{transform:translateY(-70px) scale(.9)}100%{transform:none}}
+@keyframes ring{0%{opacity:.8;transform:scale(.4)}100%{opacity:0;transform:scale(2.6)}}
+@keyframes scan{0%{top:-40%}55%,100%{top:110%}}
+@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--green) 60%,transparent)}80%,100%{box-shadow:0 0 0 12px transparent}}
+@keyframes rise{from{transform:translateY(22px)}to{transform:none}}
+
+
+</style>
+
+<nav class="nav" id="nav" aria-label="Utama"><div class="wrap">
+  <a class="logo" href="#top"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTAgNTA1IiB3aWR0aD0iNjEwIiBoZWlnaHQ9IjUwNSI+CiAgPGRlZnM+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEzMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNiIgc3RkRGV2aWF0aW9uPSI3IiBmbG9vZC1jb2xvcj0iIzAwMCIgZmxvb2Qtb3BhY2l0eT0iMC4yNSIvPgogICAgPC9maWx0ZXI+CiAgICA8cGF0aCBpZD0ibWFwIiBkPSJNMTQwIDI5MCBMMjE4IDI2MyBMMzA1IDMwMCBMMzkyIDI2MyBMNDcwIDI5MCBMNTYzIDQzNyBMNDMyIDQwMiBMMzA1IDQ2MiBMMTc4IDQwMiBMNDcgNDM3IFoiLz4KICAgIDxjbGlwUGF0aCBpZD0ibWFwQ2xpcCI+CiAgICAgIDx1c2UgaHJlZj0iI21hcCIvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+CgogIDwhLS0gUGV0YSBsaXBhdCAtLT4KICA8ZyBmaWx0ZXI9InVybCgjc2hhZG93KSI+CiAgICA8dXNlIGhyZWY9IiNtYXAiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIzMCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz4KICA8dXNlIGhyZWY9IiNtYXAiIGZpbGw9IiMxMzhCQTYiIHN0cm9rZT0iIzEzOEJBNiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgoKICA8IS0tIEphbGFuIC0tPgogIDxnIGNsaXAtcGF0aD0idXJsKCNtYXBDbGlwKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjE0IiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTQwIDM3MiBDIDE0MCAzNTIsIDIzMCAzMzUsIDMwNSAyOTAiLz4KICAgIDxwYXRoIGQ9Ik0yOTUgNDgwIEMgMzMwIDQwMCwgMzQ1IDMzMCwgNDg1IDMwMCIvPgogIDwvZz4KCiAgPCEtLSBQaW4gbG9rYXNpIC0tPgogIDxnIGZpbHRlcj0idXJsKCNzaGFkb3cpIj4KICAgIDxwYXRoIGQ9Ik0zMDUgMzIyIFEyOTkgMzIyIDI5NCAzMTIgTDIyMS45IDE5NS42IEExMDAgMTAwIDAgMSAxIDM4OC4xIDE5NS42IEwzMTYgMzEyIFEzMTEgMzIyIDMwNSAzMjIgWiIKICAgICAgICAgIGZpbGw9IiMzREFBMzUiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSIzMDUiIGN5PSIxNDAiIHI9IjUwIiBmaWxsPSIjRkZGRkZGIi8+Cjwvc3ZnPgo=" alt="">Geoplana</a>
+  <div class="links"><a href="#layanan">Layanan</a><a href="#karya">Karya</a><a href="#testimoni">Testimoni</a><a href="#proses">Proses</a><a href="#kontak">Kontak</a></div>
+  <button class="icon-btn" id="themeBtn" type="button" aria-label="Ganti tema"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg></button>
+  <a class="btn btn-green btn-sm" href="#kontak">Konsultasi <span class="arr">→</span></a>
+</div></nav>
+<main id="top">
+<header class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1500 820" preserveAspectRatio="xMidYMid slice">
+      <g class="grat"><path d="M150 0V820M300 0V820M450 0V820M600 0V820M750 0V820M900 0V820M1050 0V820M1200 0V820M1350 0V820M0 164H1500M0 328H1500M0 492H1500M0 656H1500"/></g>
+      <g transform="translate(-60 200) scale(1.25)"><g class="layer" id="lyrA">
+        <path class="ct" pathLength="1" d="M60 240C50 110 200 30 330 70C430 110 440 300 370 380C300 450 110 440 70 330Z"/>
+        <path class="ct idx" pathLength="1" style="animation-delay:.15s" d="M100 230C95 130 210 70 310 110C390 145 395 280 340 340C290 400 140 390 112 310Z"/>
+        <path class="ct" pathLength="1" style="animation-delay:.3s" d="M150 220C150 150 230 120 290 150C340 175 340 260 300 300C260 340 170 320 155 270Z"/>
+        <path class="ct" pathLength="1" style="animation-delay:.45s" d="M180 222C182 175 235 155 278 175C315 195 312 255 285 280C255 305 195 295 184 262Z"/>
+        <path class="ct idx" pathLength="1" style="animation-delay:.6s" d="M205 224C208 192 240 182 265 195C290 210 288 248 268 262C248 276 212 268 207 248Z"/>
+        <path class="ct flow" pathLength="1" d="M100 230C95 130 210 70 310 110C390 145 395 280 340 340C290 400 140 390 112 310Z"/>
+      </g></g>
+      <g transform="translate(1040 -40) scale(1.15) rotate(18 250 250)"><g class="layer" id="lyrB">
+        <path class="ct" pathLength="1" style="animation-delay:.2s" d="M60 240C50 110 200 30 330 70C430 110 440 300 370 380C300 450 110 440 70 330Z"/>
+        <path class="ct idx" pathLength="1" style="animation-delay:.35s" d="M100 230C95 130 210 70 310 110C390 145 395 280 340 340C290 400 140 390 112 310Z"/>
+        <path class="ct" pathLength="1" style="animation-delay:.5s" d="M150 220C150 150 230 120 290 150C340 175 340 260 300 300C260 340 170 320 155 270Z"/>
+        <path class="ct" pathLength="1" style="animation-delay:.65s" d="M205 224C208 192 240 182 265 195C290 210 288 248 268 262C248 276 212 268 207 248Z"/>
+        <path class="ct flow" pathLength="1" style="animation-direction:reverse" d="M150 220C150 150 230 120 290 150C340 175 340 260 300 300C260 340 170 320 155 270Z"/>
+      </g></g>
+      <g class="layer" id="lyrC">
+        <path class="riv" d="M-20 700C200 660 330 720 520 690S900 600 1080 640S1360 700 1520 660"/>
+        <path class="riv f" pathLength="1" d="M-20 700C200 660 330 720 520 690S900 600 1080 640S1360 700 1520 660"/>
+        <path class="road" d="M1100 840C1150 700 1200 620 1300 560S1450 470 1520 420"/>
+        <path class="road" d="M-20 140C120 170 230 120 330 60S420 -10 450 -20"/>
+      </g>
+      <g class="layer" id="lyrD">
+        <circle class="ring" cx="210" cy="600" r="14" style="animation-delay:2s"/>
+        <g class="pin" style="animation-delay:1.2s"><path transform="translate(210 566)" d="M0-46c-17 0-30 13-30 30 0 23 30 50 30 50s30-27 30-50c0-17-13-30-30-30z" fill="#3DAA35"/><circle cx="210" cy="550" r="11" fill="#fff"/></g>
+        <circle class="ring" cx="1240" cy="300" r="12" style="animation-delay:2.6s"/>
+        <g class="pin" style="animation-delay:1.5s"><path transform="translate(1240 270) scale(.8)" d="M0-46c-17 0-30 13-30 30 0 23 30 50 30 50s30-27 30-50c0-17-13-30-30-30z" fill="#138BA6"/><circle cx="1240" cy="257" r="9" fill="#fff"/></g>
+      </g>
+    </svg>
+  </div>
+  <div class="inner">
+    <h1>Solusi geospasial cepat, murah, dan <span class="mark">gak ribet<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 14C40 6 90 4 130 8S185 15 197 9"/></svg></span>.<span class="h1-tag"><span class="price-tag"><small>from</small><b>Rp50k</b></span></span></h1>
+    <p class="lead">Peta desa, peta tematik, olah citra satelit, sampai WebGIS untuk desa, instansi, peneliti, dan mahasiswa. Cukup ceritakan kebutuhanmu, sisanya kami kerjakan sampai siap pakai.</p>
+    <div class="ctas"><a class="btn btn-green" href="#kontak">Mulai konsultasi <span class="arr">→</span></a><a class="btn btn-line" href="#karya">Lihat karya pilihan</a></div>
+  </div>
+</header>
+<div class="wrap">
+<div class="facts">
+  <div class="fact"><b class="num"><span data-count="100">100</span>+</b><span>proyek selesai</span></div>
+  <div class="fact"><b>Aceh – Papua</b><span>cakupan wilayah kerja</span></div>
+  <div class="fact"><b class="num"><span data-count="6">6</span> layanan</b><span>dari peta sampai GeoAI</span></div>
+  <div class="fact"><b>Gratis</b><span>konsultasi awal sebelum mulai</span></div>
+</div>
+
+<style>
+.fact b.sm{font-size:clamp(19px,1.9vw,24px);line-height:1.35}
+/* layanan */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc article{position:relative;padding:28px 24px 26px;border-radius:24px;border:1px solid var(--line);background:var(--bg);display:grid;gap:12px;align-content:start;overflow:hidden;transition:transform .45s var(--ease),border-color .3s,box-shadow .45s}
+.svc article::before{content:"";position:absolute;inset:auto -30% -60% auto;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,var(--tint-2),transparent 70%);transform:scale(.4);opacity:0;transition:transform .6s var(--ease),opacity .4s}
+.svc article:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--green) 45%,var(--line));box-shadow:var(--shadow)}
+.svc article:hover::before{transform:scale(1.4);opacity:1}
+.svc .ic{width:52px;height:52px;border-radius:16px;background:var(--tint-2);display:grid;place-items:center;position:relative}
+.svc .ic svg{width:28px;height:28px;stroke:var(--green-strong);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc .ic path,.svc .ic rect,.svc .ic circle{stroke-dasharray:1}
+.svc article:hover .ic path,.svc article:hover .ic rect,.svc article:hover .ic circle{animation:draw .9s var(--ease)}
+.svc h3{font-size:20px;letter-spacing:-.02em;position:relative}
+.svc p{color:var(--muted);font-size:15.5px;position:relative}
+.svc .out{position:relative;font-size:13px;font-weight:700;color:var(--green-strong)}
+
+/* karya */
+.works{display:grid;grid-template-columns:repeat(12,1fr);gap:34px 26px}
+.work{display:grid;gap:14px;align-content:start}
+.w7{grid-column:span 7}.w5{grid-column:span 5}.w12{grid-column:span 12}
+.frame{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:var(--tint);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .5s var(--ease),box-shadow .5s;will-change:transform}
+.frame:hover{box-shadow:var(--shadow)}
+.frame img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;transform:scale(1.02);transition:transform 1.2s var(--ease)}
+.frame:hover img{transform:scale(1.07)}
+.frame .sweep{position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none}
+.frame:hover .sweep{animation:sweep 1.1s var(--ease)}
+.lock{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.92);color:#0E2A22;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:7px 11px;border-radius:999px}
+.lock svg{width:13px;height:13px;stroke:#15803D;fill:none;stroke-width:2.2}
+.meta{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.meta b{color:var(--green-strong)}
+.work h3{font-size:24px;letter-spacing:-.025em}
+.work p{color:var(--muted);max-width:60ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:var(--tint-2);color:var(--green-deep)}
+.webgis{display:grid;grid-template-columns:1.25fr 1fr;gap:36px;align-items:center;padding:24px;border-radius:26px;background:var(--tint);border:1px solid var(--line)}
+.ui{border-radius:16px;overflow:hidden;border:1px solid var(--line);display:grid;grid-template-columns:170px 1fr;aspect-ratio:16/10;max-width:100%;background:var(--bg)}
+.ui .side{border-right:1px solid var(--line);padding:14px;display:grid;gap:10px;align-content:start;font-size:13px}
+.ui .side .t{font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ui label{display:flex;gap:9px;align-items:center;cursor:pointer;font-weight:600;user-select:none}
+.ui input{appearance:none;width:30px;height:18px;border-radius:999px;background:var(--line);position:relative;cursor:pointer;flex:none;transition:background .3s;margin:0}
+.ui input::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .3s var(--ease)}
+.ui input:checked{background:var(--sw,var(--green))}
+.ui input:checked::after{transform:translateX(12px)}
+.ui .map{position:relative;background:var(--tint)}
+.ui .map svg{position:absolute;inset:0;width:100%;height:100%}
+.ui .map svg g{transition:opacity .45s var(--ease)}
+.ui .map svg g.off{opacity:0}
+.pop{position:absolute;right:9%;top:12%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:9px 12px;font-size:12px;box-shadow:var(--shadow);animation:bob 4s ease-in-out infinite}
+.pop b{display:block;font-size:13px}
+.pop span{color:var(--muted)}
+.more{margin-top:44px;display:flex;gap:14px 22px;flex-wrap:wrap;align-items:center}
+.more b{font-size:16px}
+.more ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.more li{font-size:14px;font-weight:600;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;color:var(--muted);transition:border-color .3s,color .3s,transform .3s var(--ease)}
+.more li:hover{border-color:var(--green);color:var(--green-strong);transform:translateY(-2px)}
+@keyframes sweep{to{transform:translateX(120%)}}
+@keyframes bob{50%{transform:translateY(-6px)}}
+@media (max-width:980px){.svc{grid-template-columns:1fr 1fr}.w7,.w5{grid-column:span 12}.webgis{grid-template-columns:1fr}}
+@media (max-width:560px){.svc{grid-template-columns:1fr}.ui{grid-template-columns:1fr}.ui .side{grid-template-columns:1fr 1fr;border-right:0;border-bottom:1px solid var(--line)}.ui .side .t{grid-column:1/-1}.ui{aspect-ratio:auto}.ui .map{aspect-ratio:16/10}}
+</style>
+
+<section class="block" id="layanan">
+  <div class="sec-head"><div><span class="eyebrow">Layanan kami</span><h2>Dari peta jadi sampai bisa bikin sendiri</h2></div><p>Kami kerjakan untukmu, kami dampingi per proyek, atau kami ajari sampai kamu bisa sendiri.</p></div>
+  <div class="svc">
+    <article id="svc-peta"><div class="ic"><svg viewBox="0 0 24 24"><path pathLength="1" d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path pathLength="1" d="M9 3v15M15 6v15"/></svg></div><h3>Pembuatan peta</h3><p>Peta desa, tematik, dan rawan bencana, siap cetak sampai A0.</p><span class="out">Layout cetak · SHP</span></article>
+    <article id="svc-citra"><div class="ic"><svg viewBox="0 0 24 24"><rect pathLength="1" x="3" y="3" width="18" height="18" rx="3"/><path pathLength="1" d="M3 9h18M9 21V9"/><circle pathLength="1" cx="15" cy="15" r="2"/></svg></div><h3>Olah citra satelit &amp; GeoAI</h3><p>Klasifikasi lahan, deteksi perubahan, dan segmentasi berbasis AI.</p><span class="out">Sentinel-2 · SAM</span></article>
+    <article id="svc-webgis"><div class="ic"><svg viewBox="0 0 24 24"><rect pathLength="1" x="2" y="4" width="20" height="14" rx="2.5"/><path pathLength="1" d="M8 21h8M12 18v3M6 13l3-3 3 2 5-5"/></svg></div><h3>WebGIS</h3><p>Peta interaktif dengan layer, pencarian, dan pop-up atribut.</p><span class="out">Publik · internal</span></article>
+    <article id="svc-training"><div class="ic"><svg viewBox="0 0 24 24"><rect pathLength="1" x="3" y="4" width="18" height="12" rx="2"/><path pathLength="1" d="M8 20l4-4 4 4M7 9h6M7 12h4"/></svg></div><h3>Pelatihan privat</h3><p>Kelas GIS privat, materi dan jadwal menyesuaikan kebutuhanmu.</p><span class="out">QGIS · GEE · Python</span></article>
+    <article id="svc-proyek"><div class="ic"><svg viewBox="0 0 24 24"><rect pathLength="1" x="3" y="7" width="18" height="13" rx="2"/><path pathLength="1" d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 13h18"/></svg></div><h3>Kerja sama berbasis proyek</h3><p>Tim GIS tambahan untuk instansi, konsultan, dan tim riset.</p><span class="out">Per proyek</span></article>
+    <article id="svc-ta"><div class="ic"><svg viewBox="0 0 24 24"><path pathLength="1" d="M2 9l10-5 10 5-10 5z"/><path pathLength="1" d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/></svg></div><h3>Pendampingan tugas akhir</h3><p>Olah data dan layout peta skripsi, sambil kamu paham prosesnya.</p><span class="out">Skripsi · tesis</span></article>
+  </div>
+</section>
+
+<section class="block" id="karya">
+  <div class="sec-head"><div><span class="eyebrow">Proyek terpilih</span><h2>Dari peta sederhana sampai model AI</h2></div></div>
+  <div class="ladder" aria-hidden="true"><span>Sederhana</span><i></i><span>Kompleks</span></div>
+  <div class="projects">
+
+    <article class="proj"><div class="frame tilt"><img src="img/peta-lokasi-penelitian.jpg" alt="Peta lokasi penelitian dengan kelas ketinggian" loading="lazy"><span class="sweep"></span></div>
+      <div class="lvl"><b>01</b><span class="dots" data-l="1"><i></i><i></i><i></i></span>Dasar</div>
+      <h3>Peta lokasi penelitian</h3><p>Peta lokasi untuk tugas akhir, lengkap dengan kelas ketinggian, batas desa, dan inset.</p>
+      <div class="tags"><span>DEMNAS</span><span>Skala 1:40.000</span></div></article>
+
+    <article class="proj"><div class="frame tilt"><img src="img/peta-desa-rantau-ikil.jpg" alt="Denah administrasi Desa Rantau Ikil, Kabupaten Bungo" loading="lazy"><span class="sweep"></span></div>
+      <div class="lvl"><b>02</b><span class="dots" data-l="1"><i></i><i></i><i></i></span>Dasar</div>
+      <h3>Denah administrasi desa</h3><p>Batas desa dan dusun, jaringan jalan, sungai, dan fasilitas umum di atas citra Sentinel-2.</p>
+      <div class="tags"><span>Batas dusun</span><span>Skala 1:17.000</span></div></article>
+
+    <article class="proj"><div class="frame tilt"><img src="img/digitasi-bangunan.jpg" alt="Hasil digitasi footprint bangunan di kawasan permukiman" loading="lazy"><span class="sweep"></span></div>
+      <div class="lvl"><b>03</b><span class="dots" data-l="2"><i></i><i></i><i></i></span>Menengah</div>
+      <h3>Digitasi bangunan dan bidang tanah</h3><p>Lebih dari 6.900 footprint bangunan didigitasi dari citra resolusi tinggi, lengkap dengan cek topologi.</p>
+      <div class="tags"><span>6.900+ bangunan</span><span>Bidang tanah</span><span>Cek topologi</span></div></article>
+
+    <article class="proj"><div class="frame tilt"><img src="img/qgis-training.jpg" alt="Tampilan QGIS dengan citra Sentinel-2 Gunung Merapi" loading="lazy"><span class="sweep"></span><span class="credit" style="color:#0E2A22;text-shadow:none;background:rgba(255,255,255,.88);padding:3px 7px;border-radius:6px">Copernicus Sentinel data 2024</span></div>
+      <div class="lvl"><b>04</b><span class="dots" data-l="2"><i></i><i></i><i></i></span>Menengah</div>
+      <h3>Kelas privat QGIS untuk tim perencana</h3><p>Pelatihan dari dasar sampai layout peta, langsung praktik memakai data milik peserta.</p>
+      <div class="tags"><span>QGIS</span><span>Praktik data sendiri</span></div></article>
+
+    <article class="proj"><div class="frame tilt"><img src="img/tutupan-lahan-asli.jpg" alt="Peta klasifikasi tutupan lahan tahun 1995" loading="lazy"><span class="sweep"></span><span class="credit">Basemap © OpenStreetMap contributors</span></div>
+      <div class="lvl"><b>05</b><span class="dots" data-l="2"><i></i><i></i><i></i></span>Menengah</div>
+      <h3>Klasifikasi tutupan lahan dengan Random Forest</h3><p>Lima kelas tutupan lahan dari citra multi-tahun, dilengkapi uji akurasi.</p>
+      <div class="tags"><span>Random Forest</span><span>Uji akurasi</span></div></article>
+
+    <article class="proj"><div class="frame tilt"><img src="img/gee-ndvi.jpg" alt="Peta NDVI Sentinel-2 Gunung Merapi, merah untuk vegetasi jarang hingga hijau untuk vegetasi rapat" loading="lazy">
+      <span class="sweep"></span><span class="credit">Copernicus Sentinel data 2024</span></div>
+      <div class="lvl"><b>06</b><span class="dots" data-l="3"><i></i><i></i><i></i></span>Lanjut</div>
+      <h3>Pemantauan vegetasi di Google Earth Engine</h3><p>Peta NDVI dari Sentinel-2 di Google Earth Engine untuk memantau kerapatan dan perubahan vegetasi.</p>
+      <div class="tags"><span>GEE</span><span>NDVI</span><span>Sentinel-2</span></div></article>
+
+    <article class="proj"><div class="frame tilt"><img src="img/hecras-genangan.jpg" alt="Hasil simulasi HEC-RAS 2D: peta kedalaman genangan di RAS Mapper" loading="lazy"><span class="sweep"></span><span class="credit">Kedalaman genangan · RAS Mapper</span></div>
+      <div class="lvl"><b>07</b><span class="dots" data-l="3"><i></i><i></i><i></i></span>Lanjut</div>
+      <h3>Pemodelan genangan banjir 2D HEC-RAS</h3><p>Simulasi aliran 2D di RAS Mapper untuk memetakan sebaran dan kedalaman genangan banjir.</p>
+      <div class="tags"><span>HEC-RAS 2D</span><span>DTM</span></div></article>
+
+    <article class="proj"><div class="frame tilt"><img src="img/delineasi-sawah-google.jpg" alt="Citra satelit sawah, kiri citra asli dan kanan dengan batas petak hasil delineasi" loading="lazy"><span class="sweep"></span><span class="credit">kiri: citra · kanan: batas petak</span></div>
+      <div class="lvl"><b>08</b><span class="dots" data-l="3"><i></i><i></i><i></i></span>Lanjut</div>
+      <h3>Delineasi petak sawah dengan AI</h3><p>Model AI menarik 1.619 batas petak sawah dari ortofoto 2,5 m, lengkap dengan luas tiap petak.</p>
+      <div class="tags"><span>Deep learning</span><span>1.619 petak</span></div></article>
+    <article class="proj wide"><div class="frame tilt"><img src="img/sam-atap-jakarta.jpg" alt="Hasil segmentasi atap bangunan dengan SAM di kawasan perumahan Jakarta" loading="lazy"><span class="sweep"></span><span class="credit">Garis kuning: batas atap hasil SAM</span></div>
+      <div class="lvl"><b>09</b><span class="dots" data-l="3"><i></i><i></i><i></i></span>Lanjut</div>
+      <h3>Segmentasi bangunan otomatis</h3><p>Segment Anything (SAM) menarik batas atap otomatis dari citra 10 cm, dengan IoU 0,87 terhadap digitasi manual.</p>
+      <div class="tags"><span>SAM</span><span>Citra 10 cm</span><span>IoU 0,87</span></div></article>
+    <article class="proj wide"><div class="frame tilt"><img src="img/webgis-digital-twin.jpg" alt="WebGIS digital twin: peta sebaran portofolio dengan panel KPI dan grafik" loading="lazy"><span class="sweep"></span></div>
+      <div class="lvl"><b>10</b><span class="dots" data-l="3"><i></i><i></i><i></i></span>Lanjut</div>
+      <h3>WebGIS digital twin 3D</h3><p>Dasbor peta interaktif untuk memantau portofolio aset, risiko bencana, dan simulasi skenario dalam tampilan 2D dan 3D.</p>
+      <div class="tags"><span>3D</span><span>MapLibre</span><span>Dasbor</span></div></article>
+
+  </div>
+  <div class="more"><b>Juga pernah dikerjakan</b><ul><li>Jalur evakuasi</li><li>Peta litologi</li><li>pH tanah</li><li>Kemiringan lereng</li><li>Delineasi sawah &amp; jagung</li><li>Peta bidang</li><li>WebGIS pertanahan</li><li>WebGIS ekowisata</li></ul></div>
+</section>
+
+
+
+<style>
+.svc article::before{display:none}
+.svc article{border-color:var(--line)}
+.svc article:hover{box-shadow:0 14px 30px -22px rgba(14,42,34,.35)}
+/* layanan ringkas */
+.svc{gap:14px}
+.svc article{grid-template-columns:44px 1fr;column-gap:16px;row-gap:3px;padding:20px 22px;border-radius:18px;align-items:start}
+.svc .ic{width:44px;height:44px;border-radius:12px;grid-row:1/span 3}
+.svc .ic svg{width:22px;height:22px}
+.svc h3,.svc p,.svc .out{grid-column:2}
+.svc h3{font-size:17.5px;line-height:1.3}
+.svc p{font-size:14.5px;line-height:1.55}
+.svc .out{font-size:12.5px;margin-top:5px}
+.svc article:hover{transform:translateY(-3px)}
+#layanan .sec-head{margin-bottom:28px}
+/* proyek terpilih */
+.ladder{display:flex;align-items:center;gap:14px;margin:-12px 0 28px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ladder i{flex:1;height:6px;border-radius:999px;background:linear-gradient(90deg,var(--lime),var(--green),var(--green-deep))}
+.projects{display:grid;grid-template-columns:repeat(4,1fr);gap:36px 22px}
+.proj{display:grid;gap:10px;align-content:start}
+.proj .frame{aspect-ratio:4/3;max-width:100%;border-radius:18px}
+.proj .frame img,.proj .frame .thumb{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.proj .frame .chart{position:absolute;right:10px;bottom:30px;width:52%;height:auto;filter:drop-shadow(0 6px 10px rgba(0,0,0,.25))}
+.proj .credit{position:absolute;left:10px;bottom:8px;font-size:10.5px;font-weight:600;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.proj .lock{top:10px;left:10px;font-size:11px;padding:6px 9px}
+.lvl{display:flex;align-items:center;gap:8px;margin-top:4px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lvl b{color:var(--green-strong);font-size:13px;letter-spacing:0}
+.dots{display:inline-flex;gap:3px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.dots[data-l="1"] i:nth-child(1),.dots[data-l="2"] i:nth-child(-n+2),.dots[data-l="3"] i{background:var(--green)}
+.proj h3{font-size:19px;letter-spacing:-.02em;line-height:1.28}
+.proj p{font-size:14.5px;line-height:1.55;color:var(--muted)}
+.proj .tags span{font-size:12px;padding:5px 10px}.proj.wide{grid-column:span 2}.proj.wide .frame{aspect-ratio:16/9}.proj .bld{transform-box:fill-box;transform-origin:50% 100%;transition:transform .6s var(--ease)}.proj:hover .bld{transform:scaleY(1.08)}.proj:hover .bld:nth-child(2n){transform:scaleY(.94)}@media (max-width:560px){.proj.wide{grid-column:auto}.proj.wide .frame{aspect-ratio:4/3}}
+.proj .draw{stroke-dasharray:1}
+.proj:hover .draw{animation:draw 1.1s var(--ease)}
+.proj .dig rect{stroke-dasharray:1}
+.proj:hover .dig rect{animation:draw .8s var(--ease) backwards}
+.proj:hover .dig rect:nth-child(2n){animation-delay:.12s}.proj:hover .dig rect:nth-child(3n){animation-delay:.24s}
+.proj .flood{transform-box:fill-box;transform-origin:center;transition:transform .9s var(--ease)}
+.proj:hover .flood{transform:scaleY(1.14)}
+.proj .bubble{transform-box:fill-box;transform-origin:left bottom;transition:transform .45s var(--ease)}
+.proj:hover .bubble{transform:scale(1.07) rotate(-3deg)}
+@media (max-width:1040px){.projects{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.projects{grid-template-columns:1fr}}
+/* testimoni */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.quote{position:relative;display:grid;gap:22px;align-content:space-between;padding:30px 28px 26px;border-radius:24px;background:var(--bg);border:1px solid var(--line);transition:transform .45s var(--ease),border-color .3s}
+.quote:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--green) 45%,var(--line))}
+.quote .qm{width:40px;height:40px;fill:var(--green);opacity:.85;transition:transform .5s var(--ease)}
+.quote:hover .qm{transform:rotate(-8deg) scale(1.08)}
+.quote .tag{position:absolute;top:28px;right:26px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green-strong);background:var(--tint-2);padding:6px 10px;border-radius:999px}
+.quote blockquote{margin:0;font-size:18px;line-height:1.6;color:var(--text)}
+.quote blockquote.ph{color:var(--muted)}
+.who{display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px dashed var(--line)}
+.who .av{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--tint-2);color:var(--green-strong);font-weight:800}.who .av svg{width:22px;height:22px;fill:var(--green-strong)}
+.who b{display:block;font-size:15.5px}
+.who span{font-size:14px;color:var(--muted)}
+.draft{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--muted);border:1.5px dashed var(--line);border-radius:999px;padding:7px 12px}
+@media (max-width:980px){.quotes{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(82%,360px);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.quote{scroll-snap-align:start}}
+</style>
+
+<section class="block" id="testimoni">
+  <div class="sec-head"><div><span class="eyebrow">Testimoni</span><h2>Kata mereka yang memakai petanya</h2></div></div>
+  <div class="quotes">
+    <figure class="quote" style="margin:0"><span class="tag">Peta desa</span>
+      <svg class="qm" viewBox="0 0 40 40" aria-hidden="true"><path d="M4 30c0-10 4-17 13-22l2 3c-5 3-7 7-7 11h7v12H4zm19 0c0-10 4-17 13-22l2 3c-5 3-7 7-7 11h7v12H23z"/></svg>
+      <blockquote>Prosesnya cepat dan komunikatif. Revisi batas dusun langsung dikerjakan, dan petanya sekarang sudah terpasang di balai desa.</blockquote>
+      <figcaption class="who"><span class="av"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span><div><b>Proyek peta administrasi desa</b><span>Klien dirahasiakan</span></div></figcaption></figure>
+    <figure class="quote" style="margin:0"><span class="tag">WebGIS</span>
+      <svg class="qm" viewBox="0 0 40 40" aria-hidden="true"><path d="M4 30c0-10 4-17 13-22l2 3c-5 3-7 7-7 11h7v12H4zm19 0c0-10 4-17 13-22l2 3c-5 3-7 7-7 11h7v12H23z"/></svg>
+      <blockquote>Data yang tadinya tersebar di banyak file sekarang bisa dicari dalam satu peta. Tim kami jadi jauh lebih cepat melayani permintaan data.</blockquote>
+      <figcaption class="who"><span class="av"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span><div><b>Proyek WebGIS tata ruang</b><span>Klien dirahasiakan</span></div></figcaption></figure>
+    <figure class="quote" style="margin:0"><span class="tag">Tugas akhir</span>
+      <svg class="qm" viewBox="0 0 40 40" aria-hidden="true"><path d="M4 30c0-10 4-17 13-22l2 3c-5 3-7 7-7 11h7v12H4zm19 0c0-10 4-17 13-22l2 3c-5 3-7 7-7 11h7v12H23z"/></svg>
+      <blockquote>Dibantu olah citra sampai layout peta, dan tiap langkahnya dijelaskan. Saya jadi paham alurnya dan lebih siap saat sidang.</blockquote>
+      <figcaption class="who"><span class="av"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span><div><b>Pendampingan skripsi penginderaan jauh</b><span>Klien dirahasiakan</span></div></figcaption></figure>
+  </div>
+</section>
+
+<style>
+/* proses */
+.route{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.route svg.track{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.route svg.track path{fill:none;stroke:var(--green);stroke-width:2.5;stroke-dasharray:8 9;stroke-linecap:round;opacity:.55;animation:march 1.4s linear infinite}
+.step{position:relative;display:grid;gap:12px;align-content:start}
+.step .dot{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:16px;background:var(--bg);color:var(--muted);border:2px solid var(--line);position:relative;z-index:1;transition:background .4s,color .4s,border-color .4s,transform .4s var(--ease)}
+.step.on .dot{background:var(--green-strong);border-color:var(--green-strong);color:#fff;transform:scale(1.08)}
+.step h3{font-size:21px;letter-spacing:-.02em}
+.step p{color:var(--muted);font-size:15.5px}
+.runner{position:absolute;left:0;top:0;width:34px;height:42px;margin:-62px 0 0 -17px;z-index:2;pointer-events:none;filter:drop-shadow(0 6px 6px rgba(14,42,34,.25))}
+/* perangkat */
+.marquee{margin-top:72px;border-block:1px solid var(--line);overflow:hidden;padding-block:22px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee .row{display:flex;gap:44px;width:max-content;animation:ticker 32s linear infinite}
+.marquee:hover .row{animation-play-state:paused}
+.marquee span{display:inline-flex;align-items:center;gap:12px;font-size:22px;font-weight:700;letter-spacing:-.02em;color:var(--muted);white-space:nowrap}
+.marquee span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green)}
+/* kontak */
+.contact{position:relative;margin-block:104px 48px;border-radius:32px;overflow:hidden;background:#15803D;color:#fff;display:grid;grid-template-columns:1.1fr 1fr;gap:44px;padding:clamp(28px,5.5vw,64px)}
+.contact .rings{position:absolute;right:-180px;top:-160px;width:620px;height:620px;max-width:none;opacity:.35;animation:spin 80s linear infinite;pointer-events:none}
+.contact>*:not(.rings){position:relative}
+.contact .eyebrow{color:#C9F5D9}
+.contact .eyebrow::before{background:#C9F5D9}
+.contact h2{font-size:clamp(32px,4.4vw,54px);margin-top:16px;color:#fff}
+.contact p{color:#DDF6E6;max-width:44ch;margin-top:16px}
+.rows{display:grid;gap:12px;align-content:center}
+
+
+
+
+
+
+.crow{display:flex;align-items:center;gap:16px;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#fff;text-decoration:none;transition:background .3s,transform .35s var(--ease)}
+.crow:hover{background:rgba(255,255,255,.18);transform:translateX(6px)}
+.crow .cic{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.16)}
+.crow .cic svg{width:23px;height:23px}
+.crow .ctx{flex:1;min-width:0}
+.crow small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#C9F5D9;margin-bottom:2px}
+.crow b{display:block;font-size:17px;font-weight:700;overflow-wrap:anywhere}
+.crow .go{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#15803D;transition:transform .35s var(--ease)}
+.crow .go svg{width:18px;height:18px}
+.crow:hover .go{transform:rotate(45deg)}
+footer .soc{display:flex;flex-wrap:wrap;gap:12px 20px}
+footer .soc a{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--text);text-decoration:none}
+footer .soc a:hover{color:var(--green-strong)}
+footer .soc svg{width:20px;height:20px}
+footer{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;padding-block:26px 44px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@keyframes march{to{stroke-dashoffset:-34}}
+@keyframes ticker{to{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:920px){.route{grid-template-columns:1fr;row-gap:40px;padding-left:4px}.step{grid-template-columns:46px 1fr;column-gap:18px;row-gap:8px}.step .dot{grid-row:1/span 2}.step h3,.step p{grid-column:2}.contact{grid-template-columns:1fr}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .marquee .row{flex-wrap:wrap;width:auto}
+  .runner{display:none}
+  .step .dot{background:var(--green-strong);border-color:var(--green-strong);color:#fff}
+}
+</style>
+
+<section class="block" id="proses">
+  <div class="sec-head"><div><span class="eyebrow">Proses</span><h2>Cara kami bekerja</h2></div><p>Setiap tahap punya hasil yang bisa kamu cek sebelum lanjut.</p></div>
+  <div class="route" id="route">
+    <svg class="track" aria-hidden="true"><path id="trackPath" d=""/></svg>
+    <svg class="runner" id="runner" viewBox="0 0 34 42" aria-hidden="true"><path d="M17 1C8.2 1 1 8.2 1 17c0 11.6 16 24 16 24s16-12.4 16-24C33 8.2 25.8 1 17 1z" fill="#22A35A" stroke="#fff" stroke-width="2"/><circle cx="17" cy="16" r="6" fill="#fff"/></svg>
+    <div class="step"><span class="dot">1</span><h3>Brief &amp; data</h3><p>Diskusi kebutuhan, wilayah, skala, dan data yang sudah ada, baik dari BIG, BPS, survei, maupun citra.</p></div>
+    <div class="step"><span class="dot">2</span><h3>Olah &amp; analisis</h3><p>Digitasi, klasifikasi, overlay, atau model AI, sesuai tujuan peta.</p></div>
+    <div class="step"><span class="dot">3</span><h3>Layout &amp; revisi</h3><p>Draf layout dengan legenda, skala, inset, dan grid koordinat. Revisi sampai sesuai.</p></div>
+    <div class="step"><span class="dot">4</span><h3>Serah terima</h3><p>File cetak resolusi tinggi, SHP/GeoJSON, dan tautan WebGIS bila diperlukan.</p></div>
+  </div>
+  <div class="marquee" aria-label="Perangkat yang kami pakai"><div class="row">
+    <span>QGIS</span><span>Python</span><span>Segment Anything</span><span>Google Earth Engine</span><span>Data RBI · BIG</span><span>OpenStreetMap</span><span>Citra satelit</span><span>Foto drone</span>
+    <span aria-hidden="true">QGIS</span><span aria-hidden="true">Python</span><span aria-hidden="true">Segment Anything</span><span aria-hidden="true">Google Earth Engine</span><span aria-hidden="true">Data RBI · BIG</span><span aria-hidden="true">OpenStreetMap</span><span aria-hidden="true">Citra satelit</span><span aria-hidden="true">Foto drone</span>
+  </div></div>
+</section>
+
+<section class="contact" id="kontak">
+  <svg class="rings" viewBox="0 0 620 620" aria-hidden="true" fill="none" stroke="#C9F5D9" stroke-width="1.5">
+    <path d="M310 60C450 55 565 160 560 300S455 565 305 560 55 450 62 300 175 65 310 60Z"/>
+    <path d="M310 110C420 106 512 190 508 302S425 512 306 508 108 420 113 302 205 114 310 110Z"/>
+    <path d="M311 160C392 157 460 220 457 303S395 460 307 457 160 392 164 303 235 163 311 160Z"/>
+    <path d="M312 210C364 208 408 248 406 304S366 408 308 406 212 364 215 305 262 212 312 210Z"/>
+    <path d="M312 258C338 257 358 278 357 305S337 356 309 355 262 334 263 305 287 259 312 258Z"/>
+  </svg>
+  <div><span class="eyebrow">Kontak</span><h2>Punya wilayah yang perlu dipetakan?</h2><p>Ceritakan lokasi, tujuan, dan tenggat waktunya. Kami balas dengan rencana kerja dan estimasi.</p></div>
+  <div class="rows">
+    <a class="crow" href="https://www.instagram.com/geo.plana_id/" target="_blank" rel="noopener"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></span><span class="ctx"><small>Instagram</small><b>geo.plana_id</b></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    <a class="crow" href="https://www.tiktok.com/@geoplana_id" target="_blank" rel="noopener"><span class="cic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg></span><span class="ctx"><small>TikTok</small><b>geoplana_id</b></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    <a class="crow" href="https://www.linkedin.com/company/geoplana-indonesia" target="_blank" rel="noopener"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10.5V16M8 7.8v.1M11.5 16v-3.2a2.2 2.2 0 0 1 4.4 0V16M11.5 10.5V16"/></svg></span><span class="ctx"><small>LinkedIn</small><b>Geoplana Indonesia</b></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    <a class="crow" href="https://wa.me/6289604249822" target="_blank" rel="noopener"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M9.2 8.3c-.3 0-.7.3-.7 1 0 2.8 3.2 6.2 6.2 6.2.7 0 1-.4 1-.7l.1-1.2-1.9-.9-.9.9c-1.1-.5-2.3-1.7-2.8-2.8l.9-.9-.9-1.9z" fill="currentColor" stroke="none"/></svg></span><span class="ctx"><small>WhatsApp</small><b>+62 896-0424-9822</b></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    <a class="crow" href="mailto:geoplana.id@gmail.com"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></span><span class="ctx"><small>Email</small><b>geoplana.id@gmail.com</b></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+  </div>
+</section>
+<footer><span>© 2026 Geoplana</span><span class="soc"><a href="https://www.instagram.com/geo.plana_id/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg><span>geo.plana_id</span></a><a href="https://www.tiktok.com/@geoplana_id" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg><span>geoplana_id</span></a><a href="https://www.linkedin.com/company/geoplana-indonesia" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10.5V16M8 7.8v.1M11.5 16v-3.2a2.2 2.2 0 0 1 4.4 0V16M11.5 10.5V16"/></svg><span>Geoplana Indonesia</span></a></span></footer>
+</div>
+</main>
+<script>
+(() => {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const root = document.documentElement;
+  try { const t = localStorage.getItem("gp-theme"); if (t) root.dataset.theme = t; } catch (e) {}
+  document.getElementById("themeBtn").addEventListener("click", () => {
+    const dark = root.dataset.theme === "dark";
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("gp-theme", root.dataset.theme); } catch (e) {}
+  });
+  const nav = document.getElementById("nav");
+  addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 8), { passive: true });
+
+  if (!reduce) document.querySelectorAll("[data-count]").forEach(el => {
+    const end = +el.dataset.count, t0 = performance.now(), dur = 1400;
+    const tick = now => { const p = Math.min(1, (now - t0) / dur); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  });
+
+  const hero = document.getElementById("hero");
+  const layers = [["lyrA", 16], ["lyrB", 12], ["lyrC", 6], ["lyrD", 22]].map(([id, k]) => [document.getElementById(id), k]);
+  if (!reduce) {
+    hero.addEventListener("pointermove", e => {
+      const r = hero.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      layers.forEach(([el, k]) => el.style.transform = `translate(${(x - .5) * -k}px, ${(y - .5) * -k}px)`);
+    });
+    hero.addEventListener("pointerleave", () => layers.forEach(([el]) => el.style.transform = ""));
+  }  if (!reduce && matchMedia("(pointer: fine)").matches) document.querySelectorAll(".tilt").forEach(f => {
+    f.addEventListener("pointermove", e => { const r = f.getBoundingClientRect(); f.style.setProperty("--ry", ((e.clientX - r.left) / r.width - .5) * 8 + "deg"); f.style.setProperty("--rx", ((e.clientY - r.top) / r.height - .5) * -8 + "deg"); });
+    f.addEventListener("pointerleave", () => { f.style.removeProperty("--rx"); f.style.removeProperty("--ry"); });
+  });
+
+  document.querySelectorAll("[data-layer]").forEach(cb => cb.addEventListener("change", () => document.getElementById(cb.dataset.layer).classList.toggle("off", !cb.checked)));
+
+  const route = document.getElementById("route"), runner = document.getElementById("runner"), trackPath = document.getElementById("trackPath");
+  const steps = [...route.querySelectorAll(".step")]; let pts = [];
+  const layout = () => {
+    const rr = route.getBoundingClientRect();
+    pts = steps.map(s => { const d = s.querySelector(".dot").getBoundingClientRect(); return [d.left - rr.left + d.width / 2, d.top - rr.top + d.height / 2]; });
+    let dpath = `M${pts[0][0]} ${pts[0][1]}`;
+    for (let i = 1; i < pts.length; i++) { const [x0, y0] = pts[i - 1], [x1, y1] = pts[i]; if (Math.abs(y1 - y0) < 4) dpath += ` L${x1} ${y1}`; else { const my = (y0 + y1) / 2; dpath += ` C${x0} ${my} ${x1} ${my} ${x1} ${y1}`; } }
+    trackPath.setAttribute("d", dpath);
+  };
+  layout(); addEventListener("resize", layout);
+  if (document.fonts) document.fonts.ready.then(layout);
+  if (!reduce) {
+    const seg = 2200, hold = 900, cycle = (steps.length - 1) * (seg + hold) + hold * 2; let t0 = performance.now();
+    const ease = p => p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+    const frame = now => {
+      let t = (now - t0) % cycle, idx = 0, x, y;
+      for (let i = 0; i < steps.length; i++) {
+        if (t < hold) { [x, y] = pts[i]; idx = i; break; }
+        t -= hold;
+        if (i === steps.length - 1) { [x, y] = pts[i]; idx = i; break; }
+        if (t < seg) { const p = ease(t / seg), a = pts[i], b = pts[i + 1]; x = a[0] + (b[0] - a[0]) * p; y = a[1] + (b[1] - a[1]) * p; idx = i; break; }
+        t -= seg;
+      }
+      runner.style.transform = `translate(${x}px, ${y}px)`;
+      steps.forEach((s, i) => s.classList.toggle("on", i <= idx));
+      requestAnimationFrame(frame);
+    };
+    requestAnimationFrame(frame);
+  } else steps.forEach(s => s.classList.add("on"));
+
+  document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
+    const label = b.parentElement.querySelector("b"), done = m => { b.textContent = m; setTimeout(() => b.textContent = "Salin", 1500); };
+    const sel = () => { const r = document.createRange(); r.selectNodeContents(label); getSelection().removeAllRanges(); getSelection().addRange(r); done("Tekan Ctrl+C"); };
+    if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(() => done("Tersalin"), sel); else sel();
+  }));
+})();
+</script>
+
+</html>

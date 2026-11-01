@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 505" width="610" height="505">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <path id="map" d="M140 290 L218 263 L305 300 L392 263 L470 290 L563 437 L432 402 L305 462 L178 402 L47 437 Z"/>
+    <clipPath id="mapClip">
+      <use href="#map"/>
+    </clipPath>
+  </defs>
+
+  <!-- Peta lipat -->
+  <g filter="url(#shadow)">
+    <use href="#map" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="30" stroke-linejoin="round"/>
+  </g>
+  <use href="#map" fill="#138BA6" stroke="#138BA6" stroke-width="18" stroke-linejoin="round"/>
+
+  <!-- Jalan -->
+  <g clip-path="url(#mapClip)" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round">
+    <path d="M40 372 C 140 352, 230 335, 305 290"/>
+    <path d="M295 480 C 330 400, 345 330, 485 300"/>
+  </g>
+
+  <!-- Pin lokasi -->
+  <g filter="url(#shadow)">
+    <path d="M305 322 Q299 322 294 312 L221.9 195.6 A100 100 0 1 1 388.1 195.6 L316 312 Q311 322 305 322 Z"
+          fill="#3DAA35" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round"/>
+  </g>
+  <circle cx="305" cy="140" r="50" fill="#FFFFFF"/>
+</svg>
